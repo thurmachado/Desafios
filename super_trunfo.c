@@ -1,72 +1,90 @@
-#include <stdio.h>
+##include <stdio.h>
 
 int main() {
-    char estado[20]; // %s
-    char codigo[20]; // %s
-    char nome[20]; // %s
-    int populacao; // %d
-    float area; // %f
-    float PIB; // %f
-    int pturistico; // %d
-    int numCartas = 2; // Definindo o número de cartas
-    for (int i = 0; i < numCartas; i++) { 
+    char estado1[20], estado2[20]; // %s
+    char codigo1[20], codigo2[20]; // %s
+    char nome1[20], nome2[20]; // %s
+    int populacao1, populacao2; // %d
+    float area1, area2; // %f
+    float PIB1, PIB2; // %f
+    int pturistico1, pturistico2; // %d
 
-    /*Pesquisei uma maneira mais eficiente
-    para deixar o código mais claro...essa função
-    fará loopar (loop = fazer de novo) a coleta de dados da carta.
-    Para fazer com que faça mais que 2 vezes,
-    somente altere o número (2 no caso) em "numCartas = 2" para quantas vezes desejar fazer o loop.
-    
-    A função utiliza um loop "for", que vai de 0 até o valor de "numCartas".
-    Em cada loop, o programa coleta os dados de uma nova carta, solicitando
-    novamente o estado, código e etc.
-    
-    Como disse anteriormente, o loop faz com que o programa colete e imprima várias cartas sem precisar
-    duplicar o código de coleta de dados para cada carta, deixando o código em um todo, enorme.
-    
-    Se desejar aumentar ou diminuir o número de cartas, só ajustar o valor de "numCartas" no início do código,
-    sem precisar mudar a estrutura do loop.
-    */
-
-    // COLETA DOS DADOS DA CARTA
+    // COLETA DOS DADOS DA CARTA 1
     printf("BORA PARA A COLETA DE DADOS DA CARTA!\n");
-    printf("INFORMAÇÕES DA CARTA %d\n", i + 1); // isso vai imprimir "CARTA 1", "CARTA 2", etc., vai do valor que colocar em 'i'.
+    printf("INFORMAÇÕES DA CARTA 1\n");
 
     printf("Digite o estado: \n");
-    scanf("%s", estado);
+    scanf("%s", estado1);
 
     printf("Digite o código da carta: \n");
-    scanf("%s", codigo);
+    scanf("%s", codigo1);
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", nome);
+    scanf("%s", nome1);
 
     printf("Digite a população: \n");
-    scanf("%d", &populacao);
+    scanf("%d", &populacao1);
 
     printf("Digite a área: \n");
-    scanf(" %f", &area);
+    scanf(" %f", &area1);
 
     printf("Digite o PIB: \n");
-    scanf(" %f", &PIB);
+    scanf(" %f", &PIB1);
 
     printf("Digite o número de pontos turísticos: \n");
-    scanf("%d", &pturistico);
+    scanf("%d", &pturistico1);
 
-    printf("\n"); //pulando linha para organizar a impressão
+    printf("\n"); // Organizando as linhas da impressão no terminal
 
-    printf("INFORMAÇÕES DA CARTA %d\n", i + 1); //RESULTADO - impressão dos dados das cartas
+    // COLETA DOS DADOS DA CARTA 2
+    printf("INFORMAÇÕES DA CARTA 2\n");
 
-    printf("Estado: %s \n", estado);
-    printf("Código: %s \n", codigo);
-    printf("Nome: %s \n", nome);
-    printf("População: %d \n", populacao);
-    printf("Área: %.2f \n", area);
-    printf("PIB: %.2f \n", PIB);
-    printf("Pontos turísticos: %d \n", pturistico);
+    printf("Digite o estado: \n");
+    scanf("%s", estado2);
+
+    printf("Digite o código da carta: \n");
+    scanf("%s", codigo2);
+
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", nome2);
+
+    printf("Digite a população: \n");
+    scanf("%d", &populacao2);
+
+    printf("Digite a área: \n");
+    scanf(" %f", &area2);
+
+    printf("Digite o PIB: \n");
+    scanf(" %f", &PIB2);
+
+    printf("Digite o número de pontos turísticos: \n");
+    scanf("%d", &pturistico2);
+
+    printf("\n"); // Organizando as linhas da impressão no terminal
+
+    // IMPRESSÃO DOS DADOS CARTA 1
+    printf("INFORMAÇÕES DA CARTA 1\n");
+    printf("Estado: %s \n", estado1);
+    printf("Código: %s \n", codigo1);
+    printf("Nome: %s \n", nome1);
+    printf("População: %d \n", populacao1);
+    printf("Área: %.2f \n", area1);
+    printf("PIB: %.2f \n", PIB1);
+    printf("Pontos turísticos: %d \n", pturistico1);
+
+    printf("\n"); // Organizando as linhas da impressão no terminal
+
+    // IMPRESSÃO DOS DADOS CARTA 2
+    printf("INFORMAÇÕES DA CARTA 2\n");
+    printf("Estado: %s \n", estado2);
+    printf("Código: %s \n", codigo2);
+    printf("Nome: %s \n", nome2);
+    printf("População: %d \n", populacao2);
+    printf("Área: %.2f \n", area2);
+    printf("PIB: %.2f \n", PIB2);
+    printf("Pontos turísticos: %d \n", pturistico2);
 
     printf("\n");
-}
 
     return 0;
 }
