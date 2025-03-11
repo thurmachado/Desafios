@@ -1,4 +1,4 @@
-##include <stdio.h>
+#include <stdio.h>
 
 int main() {
     char estado1[20], estado2[20]; // %s
